@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Super Basic Auto Email Builder.
+## Built in React.js with an interesting caveat.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app accepts an Excel file with three fields: "First name," "Last name," and "email." There can be as many rows as you'd like, but functionally, it will only work if each row has an email field at the very least (though the email will look a little silly if there are no names in their respective rows). Once the file is selected, simply click "Generate letters" and the app will spit out pre-written emails (the body of which can be modified within `src/template.js`). Please note that at this point, it doesn't actually send the email by itself, but rather it queues up an pre-written email to be sent in your browser as if you had clicked a "Contact Me" link on a website, for example.
 
-## Available Scripts
+### Okay, so why bother with such a straightfoward app?
 
-In the project directory, you can run:
+Well... I didn't really write it. I mean, I did write it. But I didn't? I came up with its concept and the execution around it, but I didn't write the code itself. [ChatGPT](https://openai.com/blog/chatgpt/) did. It wasn't perfect, by any means; there were several issues that I needed to iron out due to JavaScript's many quirks, and ChatGPT's assumption that this would be run as part of a larger server-side application vs. just being a simple browser app. Granted, I could have elaborated in my conversation with ChatGPT and it probably would have worked it out, but either way, this was definitely a collaborative effort.
 
-### `npm start`
+### Is "collaborative" the right word?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+That's a really good question, and I'm going to take a stance on this for the time being and say "no." I don't actually think it's collaborative. Maybe that will be a controversial take one day; maybe it already is. I'm going to put it into concepts that I understand better: I'm a drummer. When I drum, I use drumsticks and hit the cymbals and drums in front of me in order to create the sound that we all associate with "drumming." The sounds that are created are ostensibly due to me, as the drummer, but they would not be possible without the drum set, or the drum sticks I'm using. In a way, I would compare my drum set to a computer. A lot of items and calculations done within an app would not be possible without the computational power of a computer behind it. It's not that humans _can't_ do the equations, but that we are much slower at it, and at a certain point, it becomes virtually impossible to keep up with the speed of a computer. Just like, ostensibly, there is a person out there capable of making perfect drum set sounds by themself, using their own body, but it's certainly a heck of a lot easier to make those sounds with a drum set, and the point of entry is much lower-- you don't have to be some sort of sound-imitating guru to pick up a pair of sticks and whack a drum, and you don't have to be a human computing machine to plop down at a desk and start coding on a computer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+So that covers the computer aspect of it. How does ChatGPT fit into this? I see ChatGPT as something like a double kick pedal on the drum set. Theoretically, it allows you to do something on the drum set that you already could do (play the kick drum), but in a way that is far faster / more efficient than previously possible (now I can use both of my feet instead of just one of my feet). Granted, there are plenty of times where you don't _need_ to use ChatGPT to write your app, just like there are plenty of genres of music that don't require the foot speed that a double kick brings to the table. And there are plenty of times when ChatGPT's functionality isn't going to be helpful in its current state. If I'm building out a full-stack app with multiple layers across several languages that has tons of dependencies and consumes extremely complex layers, I don't think we're anywhere near being able to replicate that within a conversation with ChatGPT, at least not without a bunch of tiered, very deliberate conversations building single components / layers one at a time, which seems like it'd actually be more work and less efficient than just putting a team to work on the app. Likewise, it doesn't matter how many extra tools and toys I bring along with my drum set; if I'm not a competent jazz drummer, I'm going to have a terrible time trying to sit in at an open jazz jam. But I've got to say, I would have done a heck of a lot more Googling and hair-pulling trying to build this simple app out by myself instead of using ChatGPT's help. In summary, ChatGPT is still limited by what the user is bringing to the table, and their ability to work with ChatGPT's output. It's like the computational equivalency of Wikipedia - it's awesome that we can get to the information and digest it more quickly, but how do we properly synthesize it and apply it to real-life concepts? What if there is an issue? What if you ask the wrong questions in the first place? The best instrument in the world will still sound terrible in the hands of someone without a good musical foundation.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So, back to the question at hand: when I make music, am I "collaborating" with my double kick pedal? Is my drum set going to be listed alongside me in the liner notes of my next album? No. At the end of the day, these are tools that make our jobs easier. ChatGPT seems poised to make jobs like mine much, much... much easier, though it remains to be seen what the future holds for it. I can also see something this powerful become pretty highly regulated pretty quickly. But I'm just riffing at this point. Speaking of riffing, I should probably hop on my kit and practice for a bit...
